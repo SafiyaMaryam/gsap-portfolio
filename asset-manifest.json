@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gsap-portfolio/static/css/main.0fe31093.css",
-    "main.js": "/gsap-portfolio/static/js/main.3b4a6e38.js",
+    "main.js": "/gsap-portfolio/static/js/main.78ee1d8f.js",
     "static/js/453.1673d964.chunk.js": "/gsap-portfolio/static/js/453.1673d964.chunk.js",
     "index.html": "/gsap-portfolio/index.html",
     "main.0fe31093.css.map": "/gsap-portfolio/static/css/main.0fe31093.css.map",
-    "main.3b4a6e38.js.map": "/gsap-portfolio/static/js/main.3b4a6e38.js.map",
+    "main.78ee1d8f.js.map": "/gsap-portfolio/static/js/main.78ee1d8f.js.map",
     "453.1673d964.chunk.js.map": "/gsap-portfolio/static/js/453.1673d964.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fe31093.css",
-    "static/js/main.3b4a6e38.js"
+    "static/js/main.78ee1d8f.js"
   ]
 }
