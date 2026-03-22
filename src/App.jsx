@@ -13,25 +13,25 @@ function RotatingCardsSection({ sectionRef, cardsRef }) {
   {
     title: 'Simon Says',
     text: ' Game using JavaScript game logic, DOM manipulation, and event handling',
-    image: `${process.env.PUBLIC_URL}/images/simon says ss.png`,   // your project screenshot
+    image: `${process.env.PUBLIC_URL}/images/simon-says-ss.png`,   // your project screenshot
     link: 'https://safiyamaryam.github.io/Simon-game/',
   },
   {
     title: 'TinCat',
     text: 'Tinder for pets frontend with cool UI using bootstrap',
-    image: `${process.env.PUBLIC_URL}/images/tincat ss.png`,
+    image: `${process.env.PUBLIC_URL}/images/tincat-ss.png`,
     link: 'https://safiyamaryam.github.io/Tincat-project/',
   },
   {
     title: 'LocalBridge',
     text: 'Campus Connectivity and resource sharing platform',
-    image: `${process.env.PUBLIC_URL}/images/local bridge.png`,
+    image: `${process.env.PUBLIC_URL}/images/local-bridge.png`,
     link: 'https://safiyamaryam.github.io/campus-connect-hub/',
   },
   {
     title: ' My First portfolio',
     text: 'Portfolio site with HTML,CSS',
-    image: `${process.env.PUBLIC_URL}/images/basic portfolio.png`,
+    image: `${process.env.PUBLIC_URL}/images/basic-portfolio.png`,
     link: 'https://github.com/SafiyaMaryam/project-four',
   },
   {
@@ -49,7 +49,7 @@ function RotatingCardsSection({ sectionRef, cardsRef }) {
   {
     title: 'Coffee themed Portfolio UI',
     text: 'A coffee-themed portfolio with a warm dark brown aesthetic — brewed with React and smooth animations.',
-    image: `${process.env.PUBLIC_URL}/images/coffee portfolio.png`,
+    image: `${process.env.PUBLIC_URL}/images/coffee-portfolio.png`,
     link: 'https://safiyamaryam.github.io/Coffee-themed-Portfolio/',
   },
 ];
