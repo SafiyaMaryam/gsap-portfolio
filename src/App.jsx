@@ -13,43 +13,43 @@ function RotatingCardsSection({ sectionRef, cardsRef }) {
   {
     title: 'Simon Says',
     text: ' Game using JavaScript game logic, DOM manipulation, and event handling',
-    image: '/images/simon says ss.png',   // your project screenshot
+    image: `${process.env.PUBLIC_URL}/images/simon says ss.png`,   // your project screenshot
     link: 'https://safiyamaryam.github.io/Simon-game/',
   },
   {
     title: 'TinCat',
     text: 'Tinder for pets frontend with cool UI using bootstrap',
-    image: '/images/tincat ss.png',
+    image: `${process.env.PUBLIC_URL}/images/tincat ss.png`,
     link: 'https://safiyamaryam.github.io/Tincat-project/',
   },
   {
     title: 'LocalBridge',
     text: 'Campus Connectivity and resource sharing platform',
-    image: '/images/local bridge.png',
+    image: `${process.env.PUBLIC_URL}/images/local bridge.png`,
     link: 'https://safiyamaryam.github.io/campus-connect-hub/',
   },
   {
     title: ' My First portfolio',
     text: 'Portfolio site with HTML,CSS',
-    image: '/images/basic portfolio.png',
+    image: `${process.env.PUBLIC_URL}/images/basic portfolio.png`,
     link: 'https://github.com/SafiyaMaryam/project-four',
   },
   {
     title: 'Virtual-classsroom-Chatbot',
     text: 'virtual classroom chatbot for oop concepts',
-    image: '/images/chatbot.png',
+    image: `${process.env.PUBLIC_URL}/images/chatbot.png`,
     link: 'https://github.com/SafiyaMaryam/Virtual-Classroom-Chatbot',
   },
   {
     title: 'Random Cocktail Generator',
     text: 'REST API backend with PostgreSQL and Node.jBuilt a random cocktail generator using vanilla JavaScript and Node.js, integrating a public REST API for dynamic recipe fetching.',
-    image: '/images/cocktail.png',
+    image: `${process.env.PUBLIC_URL}/images/cocktail.png`,
     link: 'https://github.com/SafiyaMaryam/project-five',
   },
   {
     title: 'Coffee themed Portfolio UI',
     text: 'A coffee-themed portfolio with a warm dark brown aesthetic — brewed with React and smooth animations.',
-    image: '/images/coffee portfolio.png',
+    image: `${process.env.PUBLIC_URL}/images/coffee portfolio.png`,
     link: 'https://safiyamaryam.github.io/Coffee-themed-Portfolio/',
   },
 ];
@@ -124,7 +124,7 @@ function AboutSection({ sectionRef, interactiveRef, dynamicRef }) {
         <div className="about-right">
           {/* Your playing card image will go here */
            <div className="about-image-wrapper">
-    <img src="/images/queen card (1).png" alt="Safiya Maryam" className="about-face-card" />
+    <img src={`${process.env.PUBLIC_URL}/images/queen-card.png`} alt="Safiya Maryam" className="about-face-card" />
   </div>}
         </div>
       </div>
@@ -254,37 +254,37 @@ function App() {
       name: 'REACT',
       bg: '#21242b',
       color: '#61DAFB',
-      logo: '/images/react-svgrepo-com.svg',
+      logo: `${process.env.PUBLIC_URL}/images/react-svgrepo-com.svg`,
     },
     {
       name: 'NEXT.JS',
       bg: '#595959fb',
       color: '#fff',
-      logo: '/images/nextjs-icon-svgrepo-com.svg',
+      logo: `${process.env.PUBLIC_URL}/images/nextjs-icon-svgrepo-com.svg`,
     },
     {
       name: 'MONGODB',
       bg: '#ffc042',
       color: '#fff',
-      logo: '/images/MongoDB.svg',
+      logo: `${process.env.PUBLIC_URL}/images/MongoDB.svg`,
     },
     {
       name: 'POSTGRESQL',
       bg: '#76b359',
       color: '#fff',
-      logo: '/images/postgresql-logo-svgrepo-com.svg',
+      logo: `${process.env.PUBLIC_URL}/images/postgresql-logo-svgrepo-com.svg`,
     },
     {
       name: 'JAVASCRIPT',
       bg: '#D94A4A',
       color: '#fff',
-      logo: '/images/javascript-logo-svgrepo-com.svg',
+      logo: `${process.env.PUBLIC_URL}/images/javascript-logo-svgrepo-com.svg`,
     },
     {
       name: 'NODE.JS',
       bg: '#F4D03F',
       color: '#000',
-      logo: '/images/nodejs-icon-logo-svgrepo-com.svg',
+      logo: `${process.env.PUBLIC_URL}/images/nodejs-icon-logo-svgrepo-com.svg`,
     },
   ];
 
