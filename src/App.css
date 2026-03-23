@@ -35,18 +35,18 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding: 0 2rem;
-  height:100%;
+  height: 100%;
 }
 
 .nav-right {
   display: flex;
-  flex-direction: column;  /* stack icons vertically */
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   position: fixed;
-  left: 1.5rem;           /* sticks to left edge */
-  top: 50%;               /* centres vertically */
-  transform: translateY(-50%); /* perfect vertical centre */
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1000;
 }
 
@@ -81,13 +81,6 @@ body {
 .social-icon svg {
   width: 20px;
   height: 20px;
-}
-
-@media (max-width: 768px) {
-  .header { padding: 1rem 0; }
-  .nav-right { margin-top: 1rem; gap: 0.75rem; }
-  .social-icon { width: 40px; height: 40px; }
-  .social-icon svg { width: 18px; height: 18px; }
 }
 
 /* ========== HERO SECTION ========== */
@@ -266,10 +259,12 @@ body {
   border: 2px solid #990900;
   z-index: -1;
 }
-.cgpa-badge{
+
+.cgpa-badge {
   font-size: 30px;
 }
-.cgpa-value{
+
+.cgpa-value {
   color: #990900;
 }
 
@@ -295,11 +290,12 @@ body {
   z-index: 4;
 }
 
+/* ── DESKTOP values restored ── */
 .rotating-title-main {
   margin-left: 50px;
   font-size: 4rem;
   font-weight: 900;
-  color:  rgba(64, 64, 64, 0.4);
+  color: rgba(64, 64, 64, 0.4);
   text-transform: uppercase;
   margin-bottom: 60px;
 }
@@ -309,7 +305,6 @@ body {
   margin-bottom: 30px;
   font-size: 16px;
   color: #a2a1a1;
-  font-weight: 15px;
   letter-spacing: 1px;
 }
 
@@ -387,6 +382,7 @@ body {
   text-transform: uppercase;
 }
 
+/* ── DESKTOP padding restored ── */
 .rotating-inner {
   position: relative;
   width: 100%;
@@ -678,22 +674,67 @@ body {
   }
 }
 
+/* ── SINGLE merged mobile block ── */
 @media (max-width: 768px) {
-  .hero-text h1 { font-size: 4rem; }
-  .card { width: 150px; height: 220px; }
-  .about-title { font-size: 1.5rem; }
-  .experience-title { font-size: 2.5rem; }
-  .rotating-inner { padding: 4rem 1.5rem 14rem; }
-  .rotating-cards { height: 560px; }
-  .rotating-card { height: 480px; }
-  .rotating-card-image { height: 240px; }
-  .skills-container,
-  .achievements-container,
-  .experience-container { padding: 0 1.5rem; }
-  .skills-title,
-  .achievements-title { font-size: 2.5rem; }
-  .achievement-item {
-    grid-template-columns: 60px 1fr;
-    gap: 1rem;
+
+  /* NAV */
+  .social-icon { width: 34px; height: 34px; }
+  .social-icon svg { width: 16px; height: 16px; }
+
+  /* HERO */
+  .hero-text h1 { font-size: 2.2rem; letter-spacing: -1px; }
+  .hero-text { margin-bottom: 40px; }
+  .cards-area { height: 320px; }
+  .card {
+    width: 110px;
+    height: 160px;
+    margin-left: -55px;
+    margin-top: -80px;
+    overflow: hidden;
   }
+  .card-logo { width: 40px; height: 40px; margin-bottom: 6px; }
+  .card h2 { font-size: 0.65rem; letter-spacing: 0; text-align: center; padding: 0 4px; }
+  .card-0 { transform: translate(-155px, 65px) rotate(-40deg); }
+  .card-1 { transform: translate(-93px, 22px) rotate(-24deg); }
+  .card-2 { transform: translate(-31px, -7px) rotate(-12deg); }
+  .card-3 { transform: translate(31px, -7px) rotate(12deg); }
+  .card-4 { transform: translate(93px, 22px) rotate(24deg); }
+  .card-5 { transform: translate(155px, 65px) rotate(40deg); }
+
+  /* ABOUT */
+  .about-container { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 2rem; text-align: center; }
+  .about-title { font-size: 1.5rem; }
+  .about-image-wrapper { width: 180px; height: 280px; margin: 0 auto; }
+  .about-right { min-height: unset; justify-content: center; }
+  .cgpa-badge { font-size: 1.2rem; display: flex; justify-content: center; gap: 6px; }
+
+  /* ROTATING CARDS */
+  .rotating-title-main { margin-left: 0; font-size: 1.8rem; margin-bottom: 16px; }
+  .rotating-title { margin-left: 0; margin-bottom: 16px; }
+  .rotating-inner { padding: 2.5rem 1.5rem 3rem; }
+  .rotating-cards { height: 500px; }
+  .rotating-card { width: 82vw; height: 420px; }
+  .rotating-card-image { height: 200px; }
+  .rotating-card-body { padding: 1rem; }
+  .rotating-card-body h3 { font-size: 1rem; }
+  .rotating-card-body p { font-size: 0.8rem; }
+
+  /* EXPERIENCE */
+  .experience-container { padding: 0 1.5rem; }
+  .experience-title { font-size: 2.5rem; margin-bottom: 40px; }
+  .experience-item { grid-template-columns: 1fr; gap: 0.5rem; margin-bottom: 2rem; }
+  .experience-header { display: flex; justify-content: space-between; }
+  .company-name { font-size: 1.2rem; }
+
+  /* SKILLS */
+  .skills-container { padding: 0 1.5rem; }
+  .skills-title { font-size: 2.5rem; }
+
+  /* ACHIEVEMENTS */
+  .achievements-container { padding: 0 1.5rem; }
+  .achievements-title { font-size: 2.5rem; }
+  .achievement-item { grid-template-columns: 60px 1fr; gap: 1rem; }
+
+  /* FOOTER */
+  .footer-content { padding: 0 1.5rem; display: flex; flex-direction: column; gap: 8px; }
 }
